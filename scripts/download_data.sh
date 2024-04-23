@@ -24,8 +24,8 @@ mkdir -p $data/grimm
 
 mkdir -p $data/grimm/raw
 
-wget https://www.gutenberg.org/files/52521/52521-0.txt
-mv 52521-0.txt $data/grimm/raw/tales.txt
+# wget to curl for windows, to download alice in wonderland data set
+curl -o "$data/grimm/raw/tales.txt" https://www.gutenberg.org/cache/epub/11/pg11.txt
 
 # preprocess slightly
 

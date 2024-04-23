@@ -10,7 +10,8 @@ mkdir -p $base/venvs
 
 # python3 needs to be installed on your system
 
-python3 -m virtualenv -p python3 $base/venvs/torch3
+"/c/Users/sarah/AppData/Local/Programs/Python/Python310/python.exe" -m virtualenv -p "/c/Users/sarah/AppData/Local/Programs/Python/Python310/python.exe" $base/venvs/torch3
 
+# changed to '/Scripts/activate' from '/bin/activate' for windows system    
 echo "To activate your environment:"
-echo "    source $base/venvs/torch3/bin/activate"
+echo "    source $base/venvs/torch3/Scripts/activate"

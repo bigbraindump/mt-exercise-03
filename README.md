@@ -41,4 +41,25 @@ Generate (sample) some text from a trained model with:
 
     ./scripts/generate.sh
 
+Train the model with verying dropout rates and log perplexities after changes:
 
+    ./scripts/train.sh
+
+    ./scripts/generate.sh
+
+Generate charts and plots for perplexities:
+
+    python3 plots.py ./scripts/models
+
+# Changes made
+
+-dataset chosen, Alice's Adventures in Wonderland by Lewis Carroll
+
+-edited make_virtualenv.sh to use absolute python PATH, python3 was not recognized despite having python 3.10 installed
+-edited virtual env activation command for windows system, source $base/venvs/torch3/Scripts/activate"
+-edited download_data.sh script to adjust for windows machine, wget to curl command
+-manually changed encoding of 'train.txt' from UTF-8 with BOM to UTF-8 (Notepad++)
+
+# Note
+
+Code debugged using OpenAI's ChatGPT. Particularly, for creating logging perplexities in tools\pytorch-examples\word_language_model\main.py
